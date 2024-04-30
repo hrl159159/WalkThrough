@@ -23,6 +23,10 @@ WalkThrough_SAPUI5
 创建App.controller.js。App.view新建button按钮，点击按钮后的发生的动作在App.controller.js实现
 //Step5 Controllers 20240501-----------------------
 
+//Step6 Module 20240501-----------------------
+App.controller.js的消息弹窗alert()，换成sap.m.MessageToast的消息弹窗
+//Step6 Module 20240501-----------------------
+
 
 
 
