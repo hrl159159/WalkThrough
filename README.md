@@ -11,6 +11,8 @@ WalkThrough_SAPUI5
 新建index.js 作用：项目运行时，会通过index.html的资源引用，来调用index.js，从而运行index.js的逻辑
 
 在index.js中，调用sap.m.Text类，实例化Text类对象，输出文本Hello ui5，并在index.html显示
+
+创建view/App.view.xml，在视图创建Text文本Hello ui5。同时在index.js创建并调用App.view.xml视图
 //Step1 Bootstrapping 20240430-----------------------
 
 
