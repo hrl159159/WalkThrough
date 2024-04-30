@@ -9,6 +9,8 @@ WalkThrough_SAPUI5
 //Step1 Bootstrapping 20240430-----------------------
 在index.html 引入运行SAP UI5程序所需的资源文件。例如UI5主题、UI5库、index.js初始逻辑
 新建index.js 作用：项目运行时，会通过index.html的资源引用，来调用index.js，从而运行index.js的逻辑
+
+在index.js中，调用sap.m.Text类，实例化Text类对象，输出文本Hello ui5，并在index.html显示
 //Step1 Bootstrapping 20240430-----------------------
 
 
