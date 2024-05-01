@@ -23,10 +23,15 @@ WalkThrough_SAPUI5
 创建App.controller.js。App.view新建button按钮，点击按钮后的发生的动作在App.controller.js实现
 //Step5 Controllers 20240501-----------------------
 
-//Step6 Module 20240501-----------------------
+//Step6 Modules 20240501-----------------------
 App.controller.js的消息弹窗alert()，换成sap.m.MessageToast的消息弹窗
-//Step6 Module 20240501-----------------------
+//Step6 Modules 20240501-----------------------
 
+//Step7  JsonModel 20240501-----------------------
+创建oData数据结构，将oData转化成Json数据模型oModel
+将Json数据模型与App.view视图绑定
+this:调用当前方法的对象。App.view调用App.controller的Onit:function（）{}，因此此处this表示App.view
+//Step6 JsonModel 20240501-----------------------
 
 
 
