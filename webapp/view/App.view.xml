@@ -8,12 +8,16 @@
     busyIndicatorDelay="0"
 >
     <Text text="Hello ui5 again!" />
+    <!-- press=".OnShowHello"  创建按钮点击事件， 点击后触发的动作在App.controller.js实现-->
     <Button
         text="Say Hi"
         press=".OnShowHello"
     />
+    <Button
+        text="{i18n>showHelloButtonText}"
+        press=".OnShowHello"
+    />
 
-    <!-- press=".OnShowHello"  创建按钮点击事件， 点击后触发的动作在App.controller.js实现-->
     <Input
         value="{/recipient/name}"
         description="Hello {/recipient/name}"
