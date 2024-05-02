@@ -1,13 +1,13 @@
 sap.ui.define([
 	"sap/ui/core/mvc/Controller",
-	"sap/m/MessageToast",  //引入sap.m.MessageToast类，这个类可以将消息弹窗在页面底部弹出
-	"sap/ui/model/json/JSONModel",
-	"sap/ui/model/resource/ResourceModel"
+	// "sap/m/MessageToast",  //引入sap.m.MessageToast类，这个类可以将消息弹窗在页面底部弹出
+	// "sap/ui/model/json/JSONModel",
+	// "sap/ui/model/resource/ResourceModel"
 ], function (
 	Controller,
-	MessageToast,
-	JSONModel,
-	ResourceModel
+	// MessageToast,
+	// JSONModel,
+	// ResourceModel
 ) {
 	"use strict";
 
@@ -37,13 +37,13 @@ sap.ui.define([
 		// 	});
 		// 	this.getView().setModel(i18nModel,"i18n"); //this为App.view视图对象，通过setModel()将i18n Model与App.view视图绑定
 		// },
-		OnShowHello: function () {
-			//read message from i18n model
-			var oBundle = this.getView().getModel("i18n").getResourceBundle(); //获取i18n的资源绑定
-			var sRecipient = this.getView().getModel().getProperty("/recipient/name"); //过去oModel模型的recipient/name属性
-			var sMsg = oBundle.getText("helloMsg", [sRecipient]); //i18n文件的helloMsg=Hello 拼接/recipient/name 的UI5 = Hello UI5
-			// alert("Hello there!");
-			MessageToast.show(sMsg);
-		}
+		// OnShowHello: function () {
+		// 	//read message from i18n model
+		// 	var oBundle = this.getView().getModel("i18n").getResourceBundle(); //获取i18n的资源绑定
+		// 	var sRecipient = this.getView().getModel().getProperty("/recipient/name"); //过去oModel模型的recipient/name属性
+		// 	var sMsg = oBundle.getText("helloMsg", [sRecipient]); //i18n文件的helloMsg=Hello 拼接/recipient/name 的UI5 = Hello UI5
+		// 	// alert("Hello there!");
+		// 	MessageToast.show(sMsg);
+		// }
 	});
 });
