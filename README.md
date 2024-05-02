@@ -33,5 +33,14 @@ App.controller.js的消息弹窗alert()，换成sap.m.MessageToast的消息弹�
 this:调用当前方法的对象。App.view调用App.controller的Onit:function（）{}，因此此处this表示App.view
 //Step6 JsonModel 20240501-----------------------
 
+//Step8 Translatable Texts 20240501-----------------------
+新建i18n文件，通过resourceModel，将i18n内容与App.view的BUTTON按钮组件绑定
+//Step8 Translatable Texts 20240501-----------------------
+
+//Step9 Cpmponnet Configration 20240502-----------------------
+创建component.js组件，组件绑定App.view，并创建了JsonModel与ResourceModel数据
+在index.js创建CompnentContain组件容器，并在将容器内的componnet组件展示在index.html的<body ID ="content">页签
+//Step9 Cpmponnet Configration 20240502-----------------------
+
 
 
