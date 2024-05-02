@@ -43,8 +43,11 @@ this:调用当前方法的对象。App.view调用App.controller的Onit:function�
 //Step9 Cpmponnet Configration 20240502-----------------------
 
 
+//Step 10: Descriptor for Applications 20240502-----------------------
+manifest.json文件，JSON 格式的配置对象，其中包含所有全局应用程序设置和参数，例如设置应用程序的标题、描述、UI5版本、根视图等。是应用程序、组件和库的描述符
 //Step 10: Descriptor for Applications-----------------------
-manifest.json文件，设置项目的版本，标题，资源文件i18n。UI5的版本等
-//Step 10: Descriptor for Applications
 
 
+//Step 11: Pages and Panels 20240502-----------------------
+在App.view引入UI5风格的page
+//Step 11: Pages and Panels 20240502-----------------------

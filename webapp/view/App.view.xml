@@ -7,21 +7,18 @@
     height="100%"
     busyIndicatorDelay="0"
 >
-    <Text text="Hello ui5 again!" />
-    <!-- press=".OnShowHello"  创建按钮点击事件， 点击后触发的动作在App.controller.js实现-->
-    <Button
-        text="Say Hi"
-        press=".OnShowHello"
-    />
-    <Button
-        text="{i18n>showHelloButtonText}"
-        press=".OnShowHello"
-    />
-
-    <Input
-        value="{/recipient/name}"
-        description="Hello {/recipient/name}"
-        valueLiveUpdate="true"
-        width="60%"
-    />
+<App>
+        <pages>
+            <Page title="{i18n>homePageTitle}">
+                <content>
+                    <Panel headerText="{i18n>helloPanelTitle}">
+                        <content>
+                            <Button text="{i18n>showHelloButtonText}" press=".OnShowHello"/>
+                            <Input value="{/recipient/name}" description="Hello {/recipient/name }" valueLiveUpdate="true" width="60%"/>
+                        </content>
+                    </Panel>
+                </content>
+            </Page>
+        </pages>
+    </App>
 </mvc:View>

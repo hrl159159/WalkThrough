@@ -22,16 +22,16 @@
 // });
 
 //创建UIComponnet Container ,并将id为content的button组件放置在组件容器内
-sap.ui.define([
-    "sap/ui/core/ComponentContainer"
-], function (ComponentContainer) {
-    'use strict';
-    debugger;
-    new ComponentContainer({
-        name: "sap.ui.demo.walkthrough",
-        settings: {
-            id: "walkthrough"
-        },
-        async: true
-    }).placeAt("content");
-});
+// sap.ui.define([
+//     "sap/ui/core/ComponentContainer"
+// ], function (ComponentContainer) {
+//     'use strict';
+//     debugger;
+//     new ComponentContainer({
+//         name: "sap.ui.demo.walkthrough",
+//         settings: {
+//             id: "walkthrough"
+//         },
+//         async: true
+//     }).placeAt("content");
+// });
