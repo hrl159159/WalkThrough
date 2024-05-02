@@ -51,3 +51,13 @@ manifest.json文件，JSON 格式的配置对象，其中包含所有全局应�
 //Step 11: Pages and Panels 20240502-----------------------
 在App.view引入UI5风格的page
 //Step 11: Pages and Panels 20240502-----------------------
+
+//Step 11: Pages and Panels 20240502-----------------------
+在App.view引入UI5风格的page
+//Step 11: Pages and Panels 20240502-----------------------
+
+
+
+//Step 12: Shell Control as Container 20240502-----------------------
+在App.view界面引入<shell></shell> 的fiori风格
+//Step 12: Shell Control as Container 20240502-----------------------
