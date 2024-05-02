@@ -61,3 +61,7 @@ manifest.json文件，JSON 格式的配置对象，其中包含所有全局应�
 //Step 12: Shell Control as Container 20240502-----------------------
 在App.view界面引入<shell></shell> 的fiori风格
 //Step 12: Shell Control as Container 20240502-----------------------
+
+//Step 13: Margins and Paddings 20240502-----------------------
+设置布局
+//Step 13: Margins and Paddings 20240502-----------------------
