@@ -43,4 +43,8 @@ this:调用当前方法的对象。App.view调用App.controller的Onit:function�
 //Step9 Cpmponnet Configration 20240502-----------------------
 
 
+//Step 10: Descriptor for Applications-----------------------
+manifest.json文件，设置项目的版本，标题，资源文件i18n。UI5的版本等
+//Step 10: Descriptor for Applications
+
 
