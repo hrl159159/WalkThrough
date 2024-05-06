@@ -82,3 +82,7 @@ manifest.json文件，JSON 格式的配置对象，其中包含所有全局应�
 通过pDialog.loadFrament（），加载Dialog对象
 然后通过pDialog.open()方法打开Dialog
 //Step 16: Dialogs and Fragments 20240504-----------------------
+
+//Step 17: Fragment Callbacks 20240506-----------------------
+在dialog对话框新增一个按钮，用于关闭Dialog
+//Step 17: Fragment Callbacks 20240506-----------------------
