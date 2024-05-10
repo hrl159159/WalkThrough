@@ -86,3 +86,7 @@ manifest.json文件，JSON 格式的配置对象，其中包含所有全局应�
 //Step 17: Fragment Callbacks 20240506-----------------------
 在dialog对话框新增一个按钮，用于关闭Dialog
 //Step 17: Fragment Callbacks 20240506-----------------------
+
+//Step 18：Icons 20240510-----------------------
+onHelloBbutton 与helloDialog.fragment加图标
+//Step 18：Icons 20240510-----------------------

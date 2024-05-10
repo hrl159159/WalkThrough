@@ -57,30 +57,32 @@ sap.ui.define([
         onOpenDialog: function () {
 
             // create dialog lazily
-        //     if (!this.pDialog) {
-        //         this.pDialog = this.loadFragment({
-        //             name: "sap.ui.demo.walkthrough.view.HelloDialog",
-        //             Controller:this
-        //         });
-        //     }
-        //     this.pDialog.then(function (oDialog) {
-        //         oDialog.open();
-        //     });
-        // }
-
-        if(!this.pDialog){ //如果Dialog对象不存在，就加载一个Dialog对象到pDialog
-            this.pDialog = this.loadFragment({
-                name:"sap.ui.demo.walkthrough.view.HelloDialog",
-                Controller:this
-            }).then(function(oDialog){
+            //     if (!this.pDialog) {
+            //         this.pDialog = this.loadFragment({
+            //             name: "sap.ui.demo.walkthrough.view.HelloDialog",
+            //             Controller:this
+            //         });
+            //     }
+            //     this.pDialog.then(function (oDialog) {
+            //         oDialog.open();
+            //     });
+            // }
+            // create dialog lazily
+            if (!this.pDialog) {
+                this.pDialog = this.loadFragment({
+                    name: "sap.ui.demo.walkthrough.view.HelloDialog",
+                    Controller: this
+                });
+            }
+            this.pDialog.then(function (oDialog) {
                 oDialog.open();
             });
+
+
+        },
+        onCloseDialog: function () {
+            this.byId("helloDialog").close();
         }
-        //
-    },
-    onCloseDialog:function(){
-        this.byId("helloDialog").close();
-    }
 
     });
 });
