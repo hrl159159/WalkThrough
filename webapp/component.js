@@ -1,11 +1,14 @@
 sap.ui.define([
 	"sap/ui/core/UIComponent",
 	"sap/ui/model/json/JSONModel",
-	"sap/ui/model/resource/ResourceModel"
+	"sap/ui/model/resource/ResourceModel",
+	"./controller/HelloDialog"
 ], function (
 	UIComponent,
 	JSONModel,
-	ResourceModel
+	ResourceModel,
+	HelloDialog
+
 ) {
 	"use strict";
 
@@ -41,8 +44,18 @@ sap.ui.define([
 			// 	fallbackLocale: ""
 			// });
 			// this.setModel(i18nModel, "i18n"); //this为App.view视图对象，通过setModel()将i18n Model与App.view视图绑定
+            // set dialog
+            this._helloDialog = new HelloDialog(this.getRootControl());
+		},
+		
+        exit: function () {
+            this._helloDialog.destroy();
+            delete this._helloDialog;
+        },
 
-		}
+        openHelloDialog : function () {
+            this._helloDialog.open();
+        } 
 
 	});
 });

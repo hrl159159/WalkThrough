@@ -90,3 +90,10 @@ manifest.json文件，JSON 格式的配置对象，其中包含所有全局应�
 //Step 18：Icons 20240510-----------------------
 onHelloBbutton 与helloDialog.fragment加图标
 //Step 18：Icons 20240510-----------------------
+
+
+//Step 19：Reuse Dialog 20240511-----------------------
+原逻辑对helloDialog对话框只能被helloPanel.view的.onOpenDialog()按钮调用
+现将helloDialog对话框改成Component级别，可被所有view重复调用
+XXXX.view.onOpenDialog() --> Component.js.openHelloDialog()-->HelloDialog.js.open()
+//Step 19：Reuse Dialog 20240511-----------------------

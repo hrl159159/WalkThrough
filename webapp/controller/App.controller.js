@@ -12,6 +12,9 @@ sap.ui.define([
 	"use strict";
 
 	return Controller.extend("<id>.controller.App", {
+		onOpenDialog: function(oEvent) {
+			this.getOwnerComponent().openHelloDialog();
+		}
 		// /**
 		//  * @override
 		//  */
@@ -45,5 +48,7 @@ sap.ui.define([
 		// 	// alert("Hello there!");
 		// 	MessageToast.show(sMsg);
 		// }
+		
+		
 	});
 });
