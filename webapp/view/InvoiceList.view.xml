@@ -1,0 +1,31 @@
+<mvc:View
+    controllerName="sap.ui.demo.walkthrough.controller.InvoiceList"
+    xmlns="sap.m"
+    xmlns:mvc="sap.ui.core.mvc"
+>
+    <List
+        headerText="{i18n>invoiceListTitle}"
+        class="saUiResponsiveMargin"
+        width="auto"
+        items="{invoice>/Invoices}"
+    >
+        <!-- 定义items元素，用于包含列表项 -->
+        <items>
+            <!-- 定义ObjectListItem控件，用于显示产品信息和价格 -->
+            <!-- 设置标题，格式为数量 x 产品名称，数据来自invoice模型 -->
+            <!-- 设置数字字段，展示扩展价格，采用货币类型格式化，不显示度量单位 -->
+            <!-- 设置数字单位，从视图模型中获取货币类型 -->
+            <ObjectListItem
+                title="{invoice>Quantity} x {invoice>ProductName}"
+                number="{
+                    parts: [{path: 'invoice>ExtendedPrice'}, {path: 'view>/currency'}],
+                    type: 'sap.ui.model.type.Currency',
+                    formatOptions: {
+                        showMeasure: false
+                    }
+                }"
+                numberUnit="{view>/currency}"
+            />
+        </items>
+    </List>
+</mvc:View>

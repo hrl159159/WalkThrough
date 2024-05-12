@@ -104,3 +104,9 @@ manifest.json 添加invoices模型
 创建Invoices.view.xml
 App.view调用Invoices.view
 //Step 20：Aggregation Binding 20240512-----------------------
+
+
+//Step 21：Data types 20240512-----------------------
+将Invoices.json中的ExtendPrice字段，由string类型，修改为number类型
+在InvoiceList.controller,将InvoiceList.view与oViewModel绑定
+//Step 21：Data types 20240512-----------------------
