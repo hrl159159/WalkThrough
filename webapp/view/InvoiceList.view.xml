@@ -4,11 +4,21 @@
     xmlns:mvc="sap.ui.core.mvc"
 >
     <List
+        id="invoiceList"
         headerText="{i18n>invoiceListTitle}"
         class="saUiResponsiveMargin"
         width="auto"
         items="{invoice>/Invoices}"
     >
+        <headerToolbar>
+            <Toolbar>
+                <Text text="{i18n>invoiceListTitle}" />
+                <SearchField
+                    width="50%"
+                    search=".onFilterInvoices"
+                />
+            </Toolbar>
+        </headerToolbar>
         <!-- 定义items元素，用于包含列表项 -->
         <items>
             <!-- 定义ObjectListItem控件，用于显示产品信息和价格 -->

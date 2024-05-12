@@ -1,4 +1,5 @@
 # WalkThrough
+
 WalkThrough_SAPUI5
 //Step1: Hello World 20240430-----------------------
 新建package.json 作用：为项目配置UI5环境
@@ -42,12 +43,10 @@ this:调用当前方法的对象。App.view调用App.controller的Onit:function�
 在index.js创建CompnentContain组件容器，并在将容器内的componnet组件展示在index.html的<body ID ="content">页签
 //Step9 Cpmponnet Configration 20240502-----------------------
 
-
 //Step 10: Descriptor for Applications 20240502-----------------------
 manifest.json文件，JSON 格式的配置对象，其中包含所有全局应用程序设置和参数，例如设置应用程序的标题、描述、UI5版本、根视图等。是应用程序、组件和库的描述符
 //Step 10: Descriptor for Applications-----------------------
 
-
 //Step 11: Pages and Panels 20240502-----------------------
 在App.view引入UI5风格的page
 //Step 11: Pages and Panels 20240502-----------------------
@@ -55,8 +54,6 @@ manifest.json文件，JSON 格式的配置对象，其中包含所有全局应�
 //Step 11: Pages and Panels 20240502-----------------------
 在App.view引入UI5风格的page
 //Step 11: Pages and Panels 20240502-----------------------
-
-
 
 //Step 12: Shell Control as Container 20240502-----------------------
 在App.view界面引入<shell></shell> 的fiori风格
@@ -76,7 +73,6 @@ manifest.json文件，JSON 格式的配置对象，其中包含所有全局应�
 同时创建JelloPanel.controller，编写按钮点击事件逻辑
 //Step 15: Nested Views 20240502-----------------------
 
-
 //Step 16: Dialogs and Fragments 20240504-----------------------
 创建可被重复调用的对话框
 通过pDialog.loadFrament（），加载Dialog对象
@@ -91,7 +87,6 @@ manifest.json文件，JSON 格式的配置对象，其中包含所有全局应�
 onHelloBbutton 与helloDialog.fragment加图标
 //Step 18：Icons 20240510-----------------------
 
-
 //Step 19：Reuse Dialog 20240511-----------------------
 原逻辑对helloDialog对话框只能被helloPanel.view的.onOpenDialog()按钮调用
 现将helloDialog对话框改成Component级别，可被所有view重复调用
@@ -105,19 +100,23 @@ manifest.json 添加invoices模型
 App.view调用Invoices.view
 //Step 20：Aggregation Binding 20240512-----------------------
 
-
 //Step 21：Data types 20240512-----------------------
 将Invoices.json中的ExtendPrice字段，由string类型，修改为number类型
 在InvoiceList.controller,将InvoiceList.view与oViewModel绑定
 //Step 21：Data types 20240512-----------------------
 
-
 //Step 22：Expression Binding 20240512-----------------------
 在ObjectListItem添加表达式绑定，价格大于50的，显示红色，否则显示绿色
- //Step 22：Expression Binding 20240512-----------------------
+//Step 22：Expression Binding 20240512-----------------------
 
-  //Step 23：Custom Formatter 20240512-----------------------
+//Step 23：Custom Formatter 20240512-----------------------
 根据Invoice.json数据的Status字段，将发票状态码转换为发票状态状态描述
 新建model/formatter.js，设置发票状态码与发票状态状态的对应关系
 invoiceList.view绑定model/formatter.js的方法statusText（），将发票状态码转换为发票状态状态
-  //Step 23：Custom Formatter 20240512-----------------------
+//Step 23：Custom Formatter 20240512-----------------------
+
+//Step 24：Filtering 20240512-----------------------
+1.获取搜索框输入的值
+2.根据搜索框输入的值，实例化过滤器对象
+3.过滤绑定
+//Step 24：Filtering 20240512-----------------------
