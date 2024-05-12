@@ -115,3 +115,9 @@ App.view调用Invoices.view
 //Step 22：Expression Binding 20240512-----------------------
 在ObjectListItem添加表达式绑定，价格大于50的，显示红色，否则显示绿色
  //Step 22：Expression Binding 20240512-----------------------
+
+  //Step 23：Custom Formatter 20240512-----------------------
+根据Invoice.json数据的Status字段，将发票状态码转换为发票状态状态描述
+新建model/formatter.js，设置发票状态码与发票状态状态的对应关系
+invoiceList.view绑定model/formatter.js的方法statusText（），将发票状态码转换为发票状态状态
+  //Step 23：Custom Formatter 20240512-----------------------
