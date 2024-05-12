@@ -68,12 +68,13 @@ sap.ui.define([
             //     });
             // }
             // create dialog lazily
-            this.getOwnerComponent().openHelloDialog();
+          this.getOwnerComponent().openHelloDialog();
 
 
         },
         onCloseDialog: function () {
             this.byId("helloDialog").close();
+            
         }
 
     });

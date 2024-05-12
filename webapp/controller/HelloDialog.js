@@ -41,7 +41,8 @@ sap.ui.define([
         //         oView.byId("helloDialog").open();
         //     }
         // }
-        open: function () { 
+        open: function () {
+            //    创建helloDialog弹窗对象，并连接rootview，创建后打开弹窗
             var oView = this._oView;
 
             if (!oView.byId("helloDialog")) {
@@ -63,6 +64,11 @@ sap.ui.define([
             } else {
                 oView.byId("helloDialog").open();
             }
+
+
+
+
+
         }
 
     });

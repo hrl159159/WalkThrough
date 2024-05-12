@@ -97,3 +97,10 @@ onHelloBbutton 与helloDialog.fragment加图标
 现将helloDialog对话框改成Component级别，可被所有view重复调用
 XXXX.view.onOpenDialog() --> Component.js.openHelloDialog()-->HelloDialog.js.open()
 //Step 19：Reuse Dialog 20240511-----------------------
+
+//Step 20：Aggregation Binding 20240512-----------------------
+创建Invoices.json
+manifest.json 添加invoices模型
+创建Invoices.view.xml
+App.view调用Invoices.view
+//Step 20：Aggregation Binding 20240512-----------------------
