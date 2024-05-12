@@ -120,3 +120,7 @@ invoiceList.view绑定model/formatter.js的方法statusText（），将发票状
 2.根据搜索框输入的值，实例化过滤器对象
 3.过滤绑定
 //Step 24：Filtering 20240512-----------------------
+
+//Step 25：Sortting and Grouping20240512-----------------------
+在List控件上添加排序与分组按钮，点击按钮，实现排序
+//Step 25：Sortting and Grouping20240512-----------------------

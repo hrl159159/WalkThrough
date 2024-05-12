@@ -8,7 +8,13 @@
         headerText="{i18n>invoiceListTitle}"
         class="saUiResponsiveMargin"
         width="auto"
-        items="{invoice>/Invoices}"
+        items="{
+            path: 'invoice>/Invoices',
+            sorter: {
+                path: 'ShipperName',
+                group:true
+            }
+        }"
     >
         <headerToolbar>
             <Toolbar>
@@ -30,7 +36,11 @@
             <ObjectListItem
                 title="{invoice>Quantity} x {invoice>ProductName}"
                 number="{
-                    parts: [{path: 'invoice>ExtendedPrice'}, {path: 'view>/currency'}],
+                    parts: [{
+                        path: 'invoice>ExtendedPrice'
+                    }, {
+                        path: 'view>/currency'
+                    }],
                     type: 'sap.ui.model.type.Currency',
                     formatOptions: {
                         showMeasure: false
@@ -42,9 +52,9 @@
                 <firstStatus>
                     <ObjectStatus
                         text="{
-                path:'invoice>Status',
-                formatter: '.formatter.statusText'
-                }"
+                        path: 'invoice>Status',
+                        formatter: '.formatter.statusText'
+                    }"
                     />
                 </firstStatus>
             </ObjectListItem>
