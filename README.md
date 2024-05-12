@@ -110,3 +110,8 @@ App.view调用Invoices.view
 将Invoices.json中的ExtendPrice字段，由string类型，修改为number类型
 在InvoiceList.controller,将InvoiceList.view与oViewModel绑定
 //Step 21：Data types 20240512-----------------------
+
+
+//Step 22：Expression Binding 20240512-----------------------
+在ObjectListItem添加表达式绑定，价格大于50的，显示红色，否则显示绿色
+ //Step 22：Expression Binding 20240512-----------------------

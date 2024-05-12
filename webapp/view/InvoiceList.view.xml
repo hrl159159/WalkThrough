@@ -15,6 +15,8 @@
             <!-- 设置标题，格式为数量 x 产品名称，数据来自invoice模型 -->
             <!-- 设置数字字段，展示扩展价格，采用货币类型格式化，不显示度量单位 -->
             <!-- 设置数字单位，从视图模型中获取货币类型 -->
+            <!-- 表达式绑定，将ExtendedPrice和view模型中的currency字段绑定到number和numberUnit属性上，并使用Currency类型格式化 -->
+            <!-- 设置数字状态，根据ExtendedPrice的值来决定数字状态，大于50则显示错误状态，否则显示成功状态 -->
             <ObjectListItem
                 title="{invoice>Quantity} x {invoice>ProductName}"
                 number="{
@@ -25,6 +27,7 @@
                     }
                 }"
                 numberUnit="{view>/currency}"
+                numberState="{= ${invoice>ExtendedPrice} > 50 ? 'Error' : 'Success'}"
             />
         </items>
     </List>
