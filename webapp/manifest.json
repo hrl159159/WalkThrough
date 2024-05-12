@@ -1,8 +1,6 @@
 {
     "_version": "1.1.0",
-
-	"start_url": "<startUrl>",
-
+    "start_url": "<startUrl>",
     "sap.app": {
         "_version": "1.1.0",
         "id": "sap.ui.demo.walkthrough",
@@ -15,14 +13,16 @@
         "description": "{{appDescription}}",
         "tags": {
             "keywords": [
-                "{{<keyword1>}}", "{{<keyword2>}}"
+                "{{<keyword1>}}",
+                "{{<keyword2>}}"
             ]
         },
         "dataSources": {
-            "<dataSourceAlias>": {
-                "uri": "<uri>",
+            "invoiceRemote": {
+                "uri": "https://services.odata.org/V2/Northwind/Northwind.svc/",
+                "type": "OData",
                 "settings": {
-                    "localUri": "<localUri>"
+                    "odataVersion": "2.0"
                 }
             }
         }
@@ -72,14 +72,15 @@
                 "type": "sap.ui.model.resource.ResourceModel",
                 "settings": {
                     "bundleName": "sap.ui.demo.walkthrough.i18n.i18n",
-                    "suppoertedLocales": [""],
+                    "suppoertedLocales": [
+                        ""
+                    ],
                     "fallbackLocale": ""
                 },
                 "uri": "<uriRelativeToManifest>"
             },
             "invoice": {
-                "type": "sap.ui.model.json.JSONModel",
-                "uri": "Invoices.json"
+                "dataSource": "invoiceRemote"
             },
             "": {
                 "dataSource": "<dataSourceAlias>",
@@ -93,23 +94,18 @@
             "id": "app"
         },
         "handleValidation": false,
-        "config": {
-
-        },
-        "routing": {
-
-        },
+        "config": {},
+        "routing": {},
         "extends": {
-            "component" : "<extendedComponentId>",
-			"minVersion": "<minComp1Version>",
-			"extensions": {}
+            "component": "<extendedComponentId>",
+            "minVersion": "<minComp1Version>",
+            "extensions": {}
         },
         "contentDensities": {
             "compact": false,
             "cozy": false
         }
     },
-
     "sap.platform.abap": {
         "_version": "1.1.0",
         "uri": "<uri>"

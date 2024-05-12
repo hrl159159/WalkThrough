@@ -124,3 +124,7 @@ invoiceList.view绑定model/formatter.js的方法statusText（），将发票状
 //Step 25：Sortting and Grouping20240512-----------------------
 在List控件上添加排序与分组按钮，点击按钮，实现排序
 //Step 25：Sortting and Grouping20240512-----------------------
+
+//Step 26：Remote OData Service 20240512-----------------------
+manifest.json 配置远程OData服务，invoices模型绑定远程OData服务，实现远程OData服务数据绑定
+//Step 26：Remote OData Service 20240512-----------------------
