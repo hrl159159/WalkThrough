@@ -134,3 +134,8 @@ manifest.json 配置远程OData服务，invoices模型绑定远程OData服务，
 在localService文件夹创建本地模拟服务器，并维护服务器数据Invoices.json
 在test文件夹，初始化模拟服务器，以及加载所需的组件
 //Step 27：Mock Server Configuration 20240512-----------------------
+
+
+Step 28: Unit Test with QUnit 20240512-----------------------
+单元测试
+Step 28: Unit Test with QUnit 20240512-----------------------
