@@ -128,3 +128,9 @@ invoiceList.view绑定model/formatter.js的方法statusText（），将发票状
 //Step 26：Remote OData Service 20240512-----------------------
 manifest.json 配置远程OData服务，invoices模型绑定远程OData服务，实现远程OData服务数据绑定
 //Step 26：Remote OData Service 20240512-----------------------
+
+
+//Step 27：Mock Server Configuration 20240512-----------------------
+在localService文件夹创建本地模拟服务器，并维护服务器数据Invoices.json
+在test文件夹，初始化模拟服务器，以及加载所需的组件
+//Step 27：Mock Server Configuration 20240512-----------------------
