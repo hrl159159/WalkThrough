@@ -144,3 +144,7 @@ manifest.json 配置远程OData服务，invoices模型绑定远程OData服务，
 //Step 29: Integration Test with OPA 20240512-----------------------
 集成测试
 //Step 29: Integration Test with OPA 20240512-----------------------
+
+//Step 30: Debuggging Tools 20240515-----------------------
+使用UI5 Diagnostic Tool 
+//Step 30: Debuggging Tools 20240515-----------------------
