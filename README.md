@@ -136,6 +136,11 @@ manifest.json 配置远程OData服务，invoices模型绑定远程OData服务，
 //Step 27：Mock Server Configuration 20240512-----------------------
 
 
-Step 28: Unit Test with QUnit 20240512-----------------------
+//Step 28: Unit Test with QUnit 20240512-----------------------
 单元测试
-Step 28: Unit Test with QUnit 20240512-----------------------
+//Step 28: Unit Test with QUnit 20240512-----------------------
+
+
+//Step 29: Integration Test with OPA 20240512-----------------------
+集成测试
+//Step 29: Integration Test with OPA 20240512-----------------------
