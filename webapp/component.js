@@ -46,6 +46,9 @@ sap.ui.define([
 			// this.setModel(i18nModel, "i18n"); //this为App.view视图对象，通过setModel()将i18n Model与App.view视图绑定
             // set dialog
             this._helloDialog = new HelloDialog(this.getRootControl());
+
+			//初始化路由类
+			this.getRouter().initialize();
 		},
 		
         exit: function () {

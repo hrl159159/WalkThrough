@@ -8,7 +8,7 @@ sap.ui.define([
 	JSONModel,
 	formatter,
 	Filter,
-	FilterOperator) {
+	FilterOperator,) {
 	"use strict"
 
 	return Controller.extend("sap.ui.demo.walkthrough.controller.InvoiceList", {
@@ -36,7 +36,14 @@ sap.ui.define([
 			var oBinding = oList.getBinding("items");//获取List控件的items模型的绑定对象
 			oBinding.filter(aFilter);//oBinding装的是items模型数据，aFilter装的是查询条件
 
+		},
+		onPress: function (oEvent) {
+			//component.js初始化了路由器，this.getOwnerComponent()获取组件对象
+			//getRouter()说明获取路由器对象
+			//然后使用路由器对象的navTo方法导航到名为"detail"的路由目标。
+			this.getOwnerComponent().getRouter().navTo("detail");
 		}
+
 
 	})
 })

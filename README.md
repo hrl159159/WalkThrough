@@ -129,22 +129,29 @@ invoiceList.view绑定model/formatter.js的方法statusText（），将发票状
 manifest.json 配置远程OData服务，invoices模型绑定远程OData服务，实现远程OData服务数据绑定
 //Step 26：Remote OData Service 20240512-----------------------
 
-
 //Step 27：Mock Server Configuration 20240512-----------------------
 在localService文件夹创建本地模拟服务器，并维护服务器数据Invoices.json
 在test文件夹，初始化模拟服务器，以及加载所需的组件
 //Step 27：Mock Server Configuration 20240512-----------------------
 
-
 //Step 28: Unit Test with QUnit 20240512-----------------------
 单元测试
 //Step 28: Unit Test with QUnit 20240512-----------------------
-
 
 //Step 29: Integration Test with OPA 20240512-----------------------
 集成测试
 //Step 29: Integration Test with OPA 20240512-----------------------
 
 //Step 30: Debuggging Tools 20240515-----------------------
-使用UI5 Diagnostic Tool 
+使用UI5 Diagnostic Tool
 //Step 30: Debuggging Tools 20240515-----------------------
+
+//Step 31: Routing and Navigation 20240515-----------------------
+原逻辑是指定了根视图APP.view，并在Appview里直接调用其他的view
+现要根据用户用户输入的URL，根据URL的Target，跳转到对应的view
+component.js初始化了路由器，this.getOwnerComponent()获取组件对象
+getRouter()说明获取路由器对象
+然后使用路由器对象的navTo方法导航到名为"detail"的路由目标。
+
+在detail.view.xml中，添加返回按钮，点击按钮，跳转返回到Overview.view
+//Step 31: Routing and Navigation 20240515-----------------------

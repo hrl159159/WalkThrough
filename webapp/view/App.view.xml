@@ -8,7 +8,7 @@
     busyIndicatorDelay="0"
 >
     <Shell>
-        <App class="myAppDemoWT">
+        <!-- <App class="myAppDemoWT">
             <pages>
                 <Page title="{i18n>homePageTitle}">
                     <headerContent>
@@ -27,6 +27,10 @@
                     </content>
                 </Page>
             </pages>
-        </App>
+        </App> -->
+        <App
+            class="myAppDemoWT"
+            id="app"
+        />
     </Shell>
 </mvc:View>
