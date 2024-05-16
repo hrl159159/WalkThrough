@@ -165,3 +165,8 @@ detail.controller 获取到路由参数，根据参数获取到对应的数据�
 detail.view 显示invoice模型数据
 //Step 32: Routing with Paramaters 20240516-----------------------
 
+//Step 33: Routing Back and History 20240516-----------------------
+获取浏览器历史的哈希值，检查前面 从Overview导航到Detail页面步骤，看导航步骤是否真正发生，
+如果发生的话哈希值不为空，说明发生了导航，就直接通过浏览器记录返回到上一页
+如果不发生的话哈希值为空，说明没有发生导航，就通过导航方法指定返回到Overview
+//Step 33: Routing Back and History 20240516-----------------------
