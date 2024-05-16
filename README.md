@@ -155,3 +155,13 @@ getRouter()说明获取路由器对象
 
 在detail.view.xml中，添加返回按钮，点击按钮，跳转返回到Overview.view
 //Step 31: Routing and Navigation 20240515-----------------------
+
+
+//Step 32: Routing with Paramaters 20240516-----------------------
+设置带参数的路由detail/{invoicePath}
+manifest.json 设置 detail pattern 为 /detail/:invoicePath
+invoiceList.controller 点击列表的行项目时，获取到行项目的数据，导航时将行项目数据与invoicePath绑定，实现带参数的路由
+detail.controller 获取到路由参数，根据参数获取到对应的数据，放到invocie模型显示到detail.view
+detail.view 显示invoice模型数据
+//Step 32: Routing with Paramaters 20240516-----------------------
+
